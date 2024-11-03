@@ -1,4 +1,4 @@
-const BASE_URL = 'https://your-railway-app-url.railway.app/api/v1';
+const BASE_URL = 'https://shoes-store-production.up.railway.app/api/v1';
 
 const getAuthHeader = () => {
     const user = JSON.parse(localStorage.getItem('user'));
