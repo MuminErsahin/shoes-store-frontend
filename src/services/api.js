@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:9000/api/v1';
+const BASE_URL = 'https://your-railway-app-url.railway.app/api/v1';
 
 const getAuthHeader = () => {
     const user = JSON.parse(localStorage.getItem('user'));
@@ -95,17 +95,17 @@ export const api = {
                 body: JSON.stringify(productData)
             });
 
-            console.log('Update response:', response); // Debug için
+            console.log('Update response:', response); 
 
             if (!response.ok) {
                 const errorText = await response.text();
-                console.error('Error response:', errorText); // Debug için
+                console.error('Error response:', errorText); 
                 throw new Error(errorText || 'Failed to update product');
             }
 
-            return response.json().catch(() => ({})); // Boş yanıt durumunda boş obje dön
+            return response.json().catch(() => ({})); 
         } catch (err) {
-            console.error('Update error:', err); // Debug için
+            console.error('Update error:', err); 
             throw err;
         }
     },

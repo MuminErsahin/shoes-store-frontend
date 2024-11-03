@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const OrderStatusBadge = ({ status }) => {
   const getStatusColor = () => {
-    if (!status) return 'bg-gray-100 text-gray-800'; // status yoksa default style
+    if (!status) return 'bg-gray-100 text-gray-800'; 
 
     switch (status.toLowerCase()) {
       case 'completed':
@@ -41,7 +41,7 @@ const AdminOrders = () => {
   const fetchOrders = async () => {
     try {
       const data = await api.getOrders();
-      setOrders(data || []); // boş array varsayılan değer olarak
+      setOrders(data || []); 
     } catch (err) {
       setError(err.message);
     } finally {

@@ -19,7 +19,7 @@ const Register = () => {
         e.preventDefault();
         try {
             await register(formData);
-            navigate('/login'); // Başarılı kayıttan sonra login sayfasına yönlendir
+            navigate('/login'); 
         } catch (error) {
             console.error('Registration error:', error);
         }

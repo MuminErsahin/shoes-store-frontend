@@ -11,7 +11,7 @@ const AdminLayout = () => {
 
   return (
     <div className="flex h-screen">
-      {/* Sidebar */}
+     
       <div className="w-64 bg-gray-900">
         <div className="flex items-center justify-between p-4 bg-gray-800">
           <h2 className="text-white text-xl font-semibold">Admin Panel</h2>
@@ -50,7 +50,7 @@ const AdminLayout = () => {
         </nav>
       </div>
 
-      {/* Main Content */}
+    
       <div className="flex-1 overflow-auto">
         <div className="p-8">
           <Outlet />

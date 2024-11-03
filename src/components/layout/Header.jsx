@@ -29,7 +29,6 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Navigation and Search */}
         <nav className="hidden md:flex items-center space-x-4 flex-1 justify-center">
           <Link to="/category/sport" className="text-gray-600 hover:text-gray-900">Sport</Link>
           <Link to="/category/casual" className="text-gray-600 hover:text-gray-900">Casual</Link>
@@ -50,7 +49,7 @@ const Header = () => {
           </div>
         </nav>
 
-        {/* Cart and User */}
+      
         <div className="flex items-center space-x-4 flex-1 justify-end">
           <Link to="/cart" className="relative">
             <ShoppingCart className="w-5 h-5" />

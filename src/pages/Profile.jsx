@@ -158,7 +158,7 @@ ProfileInfo.propTypes = {
   }),
   onUpdate: PropTypes.func.isRequired
 };
-// bitti
+
 const Profile = () => {
   const { user } = useAuth();
 

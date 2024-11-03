@@ -16,7 +16,7 @@ const AdminProducts = () => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
         await api.deleteProduct(id);
-        refreshProducts(); // Listeyi yenile
+        refreshProducts();
       } catch (err) {
         setDeleteError(err.message);
       }

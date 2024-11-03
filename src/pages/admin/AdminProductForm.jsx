@@ -37,7 +37,7 @@ const AdminProductForm = () => {
     }
   };
 
-  // src/pages/admin/AdminProductForm.jsx
+ 
 const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -48,7 +48,7 @@ const handleSubmit = async (e) => {
         ...formData,
         price: parseFloat(formData.price),
         stockQuantity: parseInt(formData.stockQuantity),
-        // Brand objesini doğru formatta oluştur
+        
         brands: {
           id: parseInt(formData.brandId)
         }

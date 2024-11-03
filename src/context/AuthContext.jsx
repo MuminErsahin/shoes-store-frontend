@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
         setLoading(true);
         setError(null);
         try {
-            const response = await fetch('http://localhost:9000/api/v1/auth/register', {
+            const response = await fetch('https://your-railway-app-url.railway.app/api/v1/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }) => {
             }
 
             const userData = await response.json();
-            console.log('Register Response:', userData); // Debug için
+            console.log('Register Response:', userData); 
             return userData;
         } catch (err) {
             setError(err.message);
@@ -51,7 +51,7 @@ export const AuthProvider = ({ children }) => {
         setLoading(true);
         setError(null);
         try {
-            const response = await fetch('http://localhost:9000/api/v1/auth/login', {
+            const response = await fetch('https://your-railway-app-url.railway.app/api/v1/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ export const AuthProvider = ({ children }) => {
         logout,
         hasRole,
         isAdmin,
-        register // register fonksiyonunu value'ya ekledik
+        register 
     };
 
     return (
